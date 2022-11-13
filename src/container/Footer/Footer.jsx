@@ -1,11 +1,11 @@
-import React from 'react';
-import { FooterOverlay, Newsletter } from '../../components';
-import './Footer.css';
-import { FiFacebook, FiInstagram, FiTwitter } from 'react-icons/fi';
-import { images } from '../../constants';
+import React from "react";
+import { FooterOverlay, Newsletter } from "../../components";
+import "./Footer.css";
+import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
+import { images } from "../../constants";
 
 const Footer = () => (
-  <div className="app__footer section__padding" id="login">
+  <div className="app__footer section__padding" id="contact">
     <FooterOverlay />
     <Newsletter />
 

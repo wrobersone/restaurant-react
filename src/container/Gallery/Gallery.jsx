@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 import {
   BsInstagram,
   BsArrowLeftShort,
   BsArrowRightShort,
-} from 'react-icons/bs';
+} from "react-icons/bs";
 
-import { SubHeading } from '../../components';
-import { images } from '../../constants';
-import './Gallery.css';
+import { SubHeading } from "../../components";
+import { images } from "../../constants";
+import "./Gallery.css";
 
 const Gallery = () => {
   const scrollRef = React.useRef(null);
@@ -15,7 +15,7 @@ const Gallery = () => {
   const scroll = (direction) => {
     const { current } = scrollRef;
 
-    if (direction === 'left') {
+    if (direction === "left") {
       current.scrollLeft -= 300;
     } else {
       current.scrollLeft += 300;
@@ -23,13 +23,13 @@ const Gallery = () => {
   };
 
   return (
-    <div className="app__gallery flex__center">
+    <div className="app__gallery flex__center" id="gallery">
       <div className="app__gallery-content">
         <SubHeading title="Instagram" />
         <h1 className="headtext__cormorant">Photo Gallery</h1>
         <p
           className="p__opensans"
-          style={{ color: '#AAAAAA', marginTop: '2rem' }}
+          style={{ color: "#AAAAAA", marginTop: "2rem" }}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
           mattis ipsum turpis elit elit scelerisque egestas mu.
@@ -58,11 +58,11 @@ const Gallery = () => {
         <div className="app__gallery-images_arrows">
           <BsArrowLeftShort
             className="gallery__arrow-icon"
-            onClick={() => scroll('left')}
+            onClick={() => scroll("left")}
           />
           <BsArrowRightShort
             className="gallery__arrow-icon"
-            onClick={() => scroll('right')}
+            onClick={() => scroll("right")}
           />
         </div>
       </div>
